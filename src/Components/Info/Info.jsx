@@ -2,7 +2,7 @@ import React from 'react'
 import { PostsContext } from "../../Context/Context";
 import { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
-import "./info.css"
+import "./Info.css"
 
 
 export default function Info() {
