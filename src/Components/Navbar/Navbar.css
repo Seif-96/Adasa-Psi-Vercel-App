@@ -1,39 +1,59 @@
+/* =======================
+   Navbar Container
+======================= */
 .navbar_container {
-  background-color: rgb(14, 14, 14, 0.969);
-  position: sticky;
+  background-color: rgb(14, 14, 14, 0.969); /* semi-transparent black */
+  position: sticky; /* sticky navbar */
   top: 0;
   z-index: 1000;
   width: 100%;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* shadow effect */
+  backdrop-filter: blur(5px); /* blur background behind navbar */
 }
+
+/* =======================
+   Navigation Tabs
+======================= */
 .Nav-tabs {
   background-color: rgba(0, 0, 0, 0.96);
   position: sticky;
-  top: 88px;
+  top: 88px; /* offset below navbar */
   z-index: 999;
 }
+
+/* =======================
+   Logo Section
+======================= */
 .imgLogo img {
   width: 50px;
   height: 50px;
-  object-fit: contain;
-}
-.nav-logo {
-  cursor: pointer;
-}
-.nav-logo img {
-  transition: all 0.3s ease;
-}
-.nav-logo:hover img {
-  transform: scale(1.1);
+  object-fit: contain; /* maintain aspect ratio */
 }
 
+.nav-logo {
+  cursor: pointer; /* pointer on hover */
+}
+
+.nav-logo img {
+  transition: all 0.3s ease; /* smooth animation */
+}
+
+.nav-logo:hover img {
+  transform: scale(1.1); /* zoom effect on hover */
+}
+
+/* =======================
+   Navigation Menu Wrapper
+======================= */
 .nav-menu-wrapper {
   border: 1px solid #292929;
   background-color: rgba(58, 58, 58, 0.147);
-  border-radius: 50px;
+  border-radius: 50px; /* rounded menu */
 }
 
+/* =======================
+   Navigation Links
+======================= */
 .nav-link-item {
   color: #999;
   padding: 8px 20px;
@@ -43,10 +63,13 @@
 }
 
 .nav-link-item.active {
-  background-color: #ee600f;
+  background-color: #ee600f; /* active highlight */
   color: white;
 }
 
+/* =======================
+   Log Icon Section
+======================= */
 .log-icon-wrapper {
   width: 35px;
   height: 35px;
@@ -58,16 +81,23 @@
   transition: 0.3s;
   cursor: pointer;
 }
+
 .log-icon {
   color: #999;
 }
+
 .log-icon-wrapper:hover i {
-  color: #ee600f !important;
+  color: #ee600f !important; /* icon color on hover */
 }
+
 .log-icon-wrapper:hover {
   border-color: #333;
   background-color: #1a1a1a;
 }
+
+/* =======================
+   Reading Button
+======================= */
 .reading-btn {
   background-color: #ee600f;
   color: white !important;
@@ -77,13 +107,22 @@
 }
 
 .reading-btn:hover {
-  background-color: #ff7525;
+  background-color: #ff7525; /* hover effect */
 }
+
+/* =======================
+   Menu Icon (Mobile)
+======================= */
 #menu-icon-wrapper {
-  display: none;
+  display: none; /* hidden on desktop */
   cursor: pointer;
 }
+
+/* =======================
+   Responsive Styles
+======================= */
 @media (max-width: 768px) {
+  /* Mobile Navigation Links */
   .nav-links {
     margin-top: 16px;
     border: 1px solid #292929;
@@ -91,20 +130,29 @@
     border-radius: 20px;
     padding: 16px;
   }
+
+  /* Remove wrapper border on mobile */
   .nav-menu-wrapper {
     border: 0;
     background-color: transparent;
   }
+
+  /* Mobile nav link padding */
   .nav-link-item {
     padding: 10px 15px;
   }
 
+  /* Show menu icon on mobile */
   #menu-icon-wrapper {
     display: block;
   }
+
+  /* Full width list items */
   .nav-links ul li {
     width: 100%;
   }
+
+  /* Active link styling on mobile */
   .nav-link-item.active {
     color: oklch(70.5% 0.213 47.604);
     background-color: #2e1e14;
@@ -112,9 +160,13 @@
     border-radius: 10px;
     width: 100%;
   }
+
+  /* Left actions full width */
   .nav-left-actions {
     width: 100%;
   }
+
+  /* Mobile reading button */
   .reading-btn {
     width: 97%;
     margin: 5px auto;
