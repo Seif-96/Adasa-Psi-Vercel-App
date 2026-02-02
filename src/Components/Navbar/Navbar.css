@@ -1,0 +1,81 @@
+.navbar_container {
+    background-color: rgb(14, 14, 14,0.969);
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+}
+.Nav-tabs{
+    background-color: rgba(0, 0, 0, 0.96);
+position: sticky;
+  top: 88px;           
+  z-index: 999;
+}
+.imgLogo img {
+    width: 50px ;
+    height: 50px ;
+    object-fit: contain;
+}
+.nav-logo{
+    cursor: pointer;
+}
+.nav-logo img{
+    transition: all 0.3s ease;
+}
+.nav-logo:hover img{
+    transform: scale(1.1);
+}
+
+
+.nav-menu-wrapper {
+    border:1px solid #292929 !important;
+    background-color: rgba(58, 58, 58, 0.147);
+}
+
+.nav-link-item {
+    color: #999;
+    padding: 8px 20px;
+    border-radius: 50px;
+    transition: 0.3s all ease;
+    display: inline-block;
+}
+
+.nav-link-item.active {
+    background-color: #ee600f !important; 
+    color: white !important;
+}
+
+.log-icon-wrapper {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent; 
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.log-icon {
+    color: #999;
+}
+.log-icon-wrapper:hover i{
+    color: #ee600f !important;
+}
+.log-icon-wrapper:hover {
+    border-color: #333;
+    background-color: #1a1a1a;
+}
+.reading-btn {
+    background-color: #ee600f;
+    color: white !important;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reading-btn:hover {
+    background-color: #ff7525;
+}

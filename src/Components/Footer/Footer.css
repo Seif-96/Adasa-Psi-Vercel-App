@@ -1,0 +1,138 @@
+:root {
+    --dark-bg: #0b0b0b;
+    --orange-primary: #fd6512;
+    --text-muted: #888888;
+    --input-bg: #151515;
+}
+
+.footer-section {
+    background-color: var(--dark-bg);
+    color: #ffffff;
+}
+
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    gap: 30px;
+}
+
+.footer-grid ul{
+    padding: 0;
+}
+
+@media (max-width: 992px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 576px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.newsletter-wrapper {
+    max-width: 300px; 
+}
+
+.newsletter-wrapper .form-control {
+    background-color: var(--input-bg);
+    border: 1px solid #222;
+    color: white;
+    font-size: 0.9rem;
+    padding: 12px;
+}
+
+.btn-orange {
+    background-color: var(--orange-primary);
+    color: white;
+    border-radius: 25px;
+    padding: 10px 40px;
+    border: none;
+    font-weight: bold;
+    width: fit-content; 
+}
+
+
+.logo-icon {
+    background-color: var(--orange-primary);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: white !important;
+}
+.logo-text{
+    font-size: 1.5rem;
+}
+
+.footer-title {
+    font-size: 1.1rem;
+    position: relative;
+    margin: 20px 0;
+}
+
+.psy{
+    width: 35px;
+    height: 3px;
+    background-color: var(--orange-primary);
+}
+
+.footer-section a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 0.9rem;
+}
+.footer-description{
+    color: var(--text-muted);
+    padding: 20px 0;
+}
+.fo{
+    color: var(--text-muted);
+}
+
+.footer-section a:hover {
+    color: var(--orange-primary);
+}
+
+.icon-placeholder {
+    width: 42px;
+    height: 42px;
+    background-color: rgb(22 22 22);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    border: 1px solid #333;
+    color: rgb(115 115 115);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.icon-placeholder:hover{
+    background-color: #fd6512;
+    transform: translateY(-3px);
+    color: white;
+}
+
+.footer-divider {
+    border-top: 1px solid #222;
+    opacity: 1;
+}
+
+.text-orange {
+    color: var(--orange-primary);
+}
+
+.newsletter-wrapper .hove{
+    transition: all 0.2s ease;
+}
+.hove:hover{
+    transform: translatey(-3px);
+}

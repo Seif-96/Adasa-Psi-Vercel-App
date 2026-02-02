@@ -1,0 +1,24 @@
+body{
+    font-family: Tajawal, system-ui, -apple-system, sans-serif;
+}
+*{
+   box-sizing: border-box;
+}
+a{
+    text-decoration: none !important;
+   
+}
+ul{
+    list-style: none;
+}
+/* استهداف الحاويات في الشاشات اللي عرضها أكبر من 1400px */
+@media (min-width: 1400px) {
+    .container, 
+    .container-lg, 
+    .container-md, 
+    .container-sm, 
+    .container-xl, 
+    .container-xxl {
+        max-width: 1250px !important; /* الإجبار على استخدام مقاسك الجديد */
+    }
+}
