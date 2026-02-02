@@ -36,8 +36,8 @@ export default function Info() {
           <p className="mb-5 mx-auto text-center" style={{maxWidth:"50rem" ,color:"rgb(128 126 127)"}}>
           مدونة متخصصة في فن التصوير الفوتوغرافي، نشارك معكم أسرار المحترفين ونصائح عملية لتطوير مهاراتكم. نحن شغوفون بمشاركة المعرفة ومساعدة المصورين على تنمية مهاراتهم من خلال محتوى عالي الجودة.
           </p>
-          <div className="row justify-content-center mt-5 g-0">
-          <div className="col-6 col-md-2">
+          <div className="row justify-content-center g-3">
+          <div className="col-6 col-md-3">
               <div className="stat-card">
                 <i className="fa-solid fa-users fa-2xl mb-4"></i>
                 <h3>+2مليون</h3>
@@ -45,7 +45,7 @@ export default function Info() {
               </div>
             </div>
 
-            <div className="col-6 col-md-2">
+            <div className="col-6 col-md-3">
               <div className="stat-card">
                 <i className="fa-solid fa-newspaper fa-2xl mb-4"></i>
                 <h3>+500</h3>
@@ -53,7 +53,7 @@ export default function Info() {
               </div>
             </div>
 
-            <div className="col-6 col-md-2">
+            <div className="col-6 col-md-3">
               <div className="stat-card">
                 <i className="fa-solid fa-pen-nib fa-2xl mb-4"></i>
                 <h3>+50</h3>
@@ -61,7 +61,7 @@ export default function Info() {
               </div>
             </div>
 
-            <div className="col-6 col-md-2">
+            <div className="col-6 col-md-3">
               <div className="stat-card">
                 <i className="fa-solid fa-book-open fa-2xl mb-4"></i>
                 <h3>+15</h3>
