@@ -2,7 +2,7 @@ import React from 'react'
 import "./Home.css"
 import { NavLink } from 'react-router-dom';
 import { useContext } from "react";
-import { PostsContext } from "../../Context/Context";
+import { PostsContext } from "./../../Context/Context";
 import { Nav } from 'react-bootstrap';
 
 
