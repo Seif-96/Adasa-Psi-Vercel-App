@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import postsData from "../data/posts.json";
+import postsData from "./../Data/Posts.json";
 
 export const PostsContext = createContext([]);
 
